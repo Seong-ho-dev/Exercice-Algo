@@ -1,0 +1,37 @@
+Exercice 1 : Vérifier si une personne est majeure
+Ecrire un algorithme en pseudo-code pour :
+
+Entrée : âge
+Tester si la personne est majeure
+Afficher un message adapté selon qu'elle est majeur ou non
+
+Age <- entrée âge 
+Si âge = 18 afficher vous êtes majeur
+Si âge <18 afficher vous êtes majeur 
+Si âge >18 afficher vous n'êtes pas majeur
+
+Exercice 2:
+ Mot de passe de référence <- entrée du mot de passe*
+Saisir un mot de passe <- entrée de la variable du mot de passe
+Si mot de passe pareil afficher "mot de passe accepté"
+Si mot de passe incorrect afficher " mot de passe refusé"
+Le mot de passe fait au moins 12 caractères <- entré la condition 
+Si mot de passe trop long "erreur le mot de passe doit contenir 12 caractères"
+Si mot de passe = 12 caractères vérification possible
+
+
+Exercice 3:
+
+ entrée note <- entrée de la note
+Si la note < 10 afficher "Refusé"
+Si la note >10  afficher "accepter"
+si 18<afficher Très bien 
+Si 15< afficher Asser bien 
+Si 13< afficher bien 
+Si <13 rien 
+
+Exercice 4:
+couleur du Feu <-entrée couleur du Feu
+Si le le conducteur peut avancer alors <- le feu est vert 
+Si le conducteur doit attendre alors <- le feu est orange
+Si le conducteur doit s'arrêter alors <- feu est rouge
