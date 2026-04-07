@@ -1,0 +1,50 @@
+Exercice 1:
+1:Stocker une variable âge
+2:Stocker l'année actuelle
+3:Calculer l'âge
+4:Afficher le résultat
+
+: 
+1: Stocker l'année de Actuelle <- Année entrée
+2: Stocker l'année de Naissance <- Année entrée
+3: Résultat <- Naissance - Actuelle
+4: Afficher le résultat
+
+
+demander à la machine de Soustraire l'âge à l'année
+La machine affiche la réponse
+
+
+
+Exercice 2: 
+1:Stocker une âge <- Age entrée
+1:Stocker Stanley <- Stanley Entrée
+2:Stocker un Statut de connexion <- Entrée du Statut de conenxion
+3:Afficher le résultat
+2:
+1: stocker la varibale âge <- Variable entrée
+2: Demander l'âge
+3: Affichage de l'âge
+
+3:
+1:Demander un statut de connexion 
+2: afficher la commande
+3: l'ordinateur affiche le statut de connexion
+4:Entré le statut dans une variable <- la Variable est entrée 
+
+4:
+1:afficher un message avec toutes les informations
+2:La machine affiche toutes les informations
+
+
+
+Exercice 3:
+Stockage de la Variable (a)= 1 <- entrée de a=1
+Stockage de la Variable (b)=2 <- entrée de b=2
+Désigner que b=1 <- entrée la changement
+afficher le changement 
+entrer que a=2 entrée le changement.
+Afficher les résultats des variables.
+
+ 
+ 
