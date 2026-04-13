@@ -1,0 +1,41 @@
+Exercice 1
+
+morpion ← [
+ ["X", " ", " 0"],
+ [" ", "X", "O"],
+ ["O", " ", "X"]
+]
+
+
+Exercice 2:
+notes Classe ← [
+ [12, 15, 10, 14, 17], // Classe 1
+ [8, 11, 13, 9, 19], // Classe 2
+ [16, 18, 17, 19, 20] // Classe 3
+]
+
+FONCTION Moyenneduneclasse
+NotesClasse <- :tableauNotesClasses [O]
+Moyenne Classe 3 <- 0
+MoyenneClasse3 <- : tableau 
+POUR i de 0 A notesClasse -1
+NoteClasse 3 <- MoyenneClasse3 + Noteclasse3 [i]
+FIN POUR
+MoyenneClasse3 / Noteclasse3
+AFFICHER "La moyenne de la classe est : " +MoyenneClasse3
+
+ALgortihme Part 2
+
+FONCTION Moyenneduneclasse
+NotesClasse <- :tableauNotesClasses [O]
+Moyenne Classe3 <- 0
+MoyenneClasse3 <- : tableau 
+POUR Chaque Ligne 
+POUR Chaque Colone
+traiter l'élément [ligne][Colone]
+Aficcher la moyenne de chaque classe 
+
+
+Exercice 3:
+
+
