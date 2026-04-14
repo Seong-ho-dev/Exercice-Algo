@@ -1,0 +1,146 @@
+Tri à bulle petit tableau 
+tableau <- [5, 1, 4, 2, 8]
+Pour J de 0 a taille -2
+FONCTION triABulles(tableau) 
+n ← longueur(tableau) 
+POUR i de 0 à n - 2  // Nombre de passages 
+    POUR j de 0 à n - 2 - i  // Parcours du tableau 
+        SI tableau[j] > tableau[j + 1] 
+            // Échanger les éléments 
+            temp ← tableau[j] 
+            tableau[j] ← tableau[j + 1] 
+            tableau[j + 1] ← temp 
+        FIN SI 
+    FIN POUR 
+FIN POUR 
+FIN FONCTION
+
+après le passage 1 le plus grand élément: 8 est à sa place finale
+i = 0
+
+[5, 1, 2, 4, 8]  
+ ↕              Comparer 5 et 1 → échanger  j = 0
+[1, 5, 2, 4, 8] 
+    ↕           Comparer 5 et 2 → échanger   j = 1
+[1, 2, 5, 4, 8] 
+       ↕        Comparer 5 et 4 → échanger   j = 2
+[1, 2, 4, 5, 8] 
+          ↕     Comparer 5 et 8 → OK ( 5 et 8 déjà en place)  j = 3
+[1, 2, 4, 5, 8]
+
+
+
+Passage 2
+i = 1
+[1, 2, 4, 5, 8] 
+    ↕                 Comparer 1 et 2 -> OK j = 0
+[1, 2, 4, 5, 8]
+    ↕                Comparer 2 Et 4 -> OK J = 1
+[1, 2, 4, 5, 8]      
+    ↕                Comparer 5 et 4 -> OK J = 2
+[1, 2, 4, 5, 8]      
+    ↕
+[1, 2, 4, 5, 8]      
+
+
+Exercice 3: 
+soit le tableau [29, 10, 14, 37, 13, 25]
+
+FONCTION triParSelection(tableau) 
+    n ← longueur(tableau) 
+ 
+    POUR i de 0 à n – 2 
+        // Trouver l'index du minimum dans le reste du tableau 
+        indexMin ← i 
+ 
+        POUR j de i + 1 à n – 1 
+            SI tableau[j] < tableau[indexMin] 
+                indexMin ← j 
+            FIN SI 
+        FIN POUR 
+ 
+        // Échanger l'élément minimum avec l'élément en position i 
+        SI indexMin ≠ i 
+            temp ← tableau[i] 
+            tableau[i] ← tableau[indexMin] 
+            tableau[indexMin] ← temp 
+        FIN SI 
+    FIN POUR 
+FIN FONCTION
+
+
+    Donc [29, 10, 14, 37, 13, 25]
+ i=0 
+ 
+
+
+
+
+  Passage 1:Chercher le minimum de index 0 à 5 : 
+indexMin commence à 0 (valeur 29) 
+ i = 0
+j=1 : 29 > 10 → indexMin = 1  
+j=2 : 10 < 14 → indexMin = 1 
+j=3 : 10 < 37 → indexMin reste 1 
+j=4 : 10 < 37 → indexMin = 1 
+j=5 : 10 < 25 → indexMin = 1
+Minimum = 10 (index 4) 
+Échanger tableau[0] et tableau[4]
+ 
+[10, 29, 14, 37, 13, 25]
+
+Passage 2: 
+[10, 29, 14, 37, 13, 25]
+i = 1
+Chercher le minimum de index 1 à 5 :
+Index min commence à 1 (valeur 1O)
+j=1:  29 < 14 → indexMin = 2 
+j=2 : 14 < 37 → indexMin = reste 2 
+j=3 : 14 < 13 → indexMin = 4 
+j=4 : 13 < 25 → indexMin = reste 4
+     
+Minimum = 13 (index 4) 
+Échanger tableau[1] et tableau[4] 
+ 
+ [10, 13, 14, 37, 29, 25]
+
+Passage 3 : 
+
+ [10, 13, 14, 37, 29, 25]
+i = 2
+Chercher le minimum de index 2 à 5 :
+indexMin commence à 2 (valeur 14)
+j=1 : 14 < 37 → indexMin = reste 2 
+j=2 : 14 < 29 → indexMin = reste 2
+j=3 : 14 < 25 → indexMin = reste 2
+[10, 13, 14, 37, 29, 25]
+Échanger tableau[1] et tableau[2]
+
+Passage 4: 
+[10, 13, 14, 37, 29, 25]
+Chercher le minimum de index 3 à 5 :
+indexMin commence à 3 (valeur 37)
+j=1 : 37 < 29 → indexMin = 4 
+j=5 : 29 > 25 → indexMin = 5
+[10, 13, 14, 25, 37, 29]
+minimum 25 (index 3 )
+Échanger tableau[1] et tableau[5]
+[10, 13, 14, 25, 37, 29]
+
+Passage 4 :
+[10, 13, 14, 25, 37, 29]
+Chercher le minimum de index 3 à 5 :
+indexMin commence à 4 (valeur 29)
+J1= 25 < 37 -> indexMin = 5
+J2= 25 < 29 → indexMin = reste 5
+[10, 13, 14, 25, 29, 37]
+
+Passage 5 :
+[10, 13, 14, 25, 29, 37]
+Chercher le minimum de index 3 à 5 :
+indexMin commence à 5 (valeur 29)
+J5= 29 < 37 → indexMin = 5
+
+Passage 6:
+37 ne peut être comparé
+Exercice terminé
