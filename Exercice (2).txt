@@ -1,0 +1,47 @@
+Tri à bulle petit tableau 
+tableau <- [5, 1, 4, 2, 8]
+Pour J de 0 a taille -2
+FONCTION triABulles(tableau) 
+n ← longueur(tableau) 
+POUR i de 0 à n - 2  // Nombre de passages 
+    POUR j de 0 à n - 2 - i  // Parcours du tableau 
+        SI tableau[j] > tableau[j + 1] 
+            // Échanger les éléments 
+            temp ← tableau[j] 
+            tableau[j] ← tableau[j + 1] 
+            tableau[j + 1] ← temp 
+        FIN SI 
+    FIN POUR 
+FIN POUR 
+FIN FONCTION
+
+après le passage 1 le plus grand élément: 8 est à sa place finale
+i = 0
+
+[5, 1, 2, 4, 8]  
+ ↕              Comparer 5 et 1 → échanger  j = 0
+[1, 5, 2, 4, 8] 
+    ↕           Comparer 5 et 2 → échanger   j = 1
+[1, 2, 5, 4, 8] 
+       ↕        Comparer 5 et 4 → échanger   j = 2
+[1, 2, 4, 5, 8] 
+          ↕     Comparer 5 et 8 → OK ( 5 et 8 déjà en place)  j = 3
+[1, 2, 4, 5, 8]
+
+
+
+Passage 2
+i = 1
+[1, 2, 4, 5, 8] 
+    ↕                 Comparer 1 et 2 -> OK j = 0
+[1, 2, 4, 5, 8]
+    ↕                Comparer 2 Et 4 -> OK J = 1
+[1, 2, 4, 5, 8]      
+    ↕                Comparer 5 et 4 -> OK J = 2
+[1, 2, 4, 5, 8]      
+    ↕
+[1, 2, 4, 5, 8]      5 et 8 -> OK (5 déja en place ) J = 3
+
+Passage 3
+I=2 
+
