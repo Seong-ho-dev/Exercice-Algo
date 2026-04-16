@@ -1,0 +1,80 @@
+Recursive
+
+
+Exercice 1 :
+somme(5) = 1 + 2 + 3 + 4 + 5 = 15
+Cas de base = somme(1) = 1
+Cas récursif = somme(n) = somme(n−1) + n
+
+Algorithme Complet: 
+
+Algorithme somme(n)
+
+  Fonction récursive  somme(1) = somme(1−1) + 1
+    Si n = 1 alors
+     retourner 1
+    Sinon
+      retourner somme(n - 1) + n
+     Fin Si
+Fin Fonction      
+
+partie 3:
+
+ Si n = 4 alors
+     retourner 1
+    Sinon
+      retourner somme(n - 1) + n
+     Fin Si
+Fin Fonction 
+traçage : 
+Cas de base = Somme (1)  = 1
+cas récursif = somme (4) = somme (4-1) + n
+Si n = 0 alors
+     retourner 0
+    Sinon
+      retourner somme(n - 1) + n
+     Fin Si
+    Somme (4) -> afficher 4 -> attendre 4 plus somme de 3 
+    Somme (3) -> afficher 3 -> attendre 3 plus somme de 2
+    somme (2) -> Afficher 2 -> attendre 2 plus somme de 1
+    Somme (1) -> Afficher 1 -> attendre 1 plus somme de 0
+    Somme (0) ->  retourne 0 
+    Fin de FONCTION
+    
+Exercie 2 :
+puissance(2, 4) = 2^4 = 2 × 2 × 2 × 2 = 16
+1. Le cas de base est : si n = 0, alors puissance(x, n) = 1 soit 
+si n == 0 alors
+        retourner 1 
+2. retourner x * puissance(x, n - 1)
+fin fonction
+3.
+fonction puissance(x, n)
+    si n == 0 alors
+        retourner 1
+    sinon
+        retourner x * puissance(x, n - 1)
+fin fonction
+
+pour Tracer l'exécution pour puissance(2, 4)
+
+fonction puissance(2, 4)
+    si n == 0 alors
+        retourner 1
+    sinon
+        retourner x * puissance(2, 4 - 1)
+fin fonction
+ 
+Traçage:
+puissance(2, 4) -> attendre la somme de 4 
+= 2 x puissance(2, 3) -> attendre la somme de 3
+= 2 x (2 x puissance(2, 2)) -> attendre la somme de 1
+= 2 x (2 x (2 x puissance(2, 1))) -> attendre la somme de 1
+= 2 x (2 x (2 x (2 x puissance(2, 0)))) -> retourne à O
+
+fin de la liste d'attente on remonte :
+= 2 x (2 x (2 x 2)) -> Calcul 
+= 2 x (2 x 4) -> Calcul
+= 2 x 8 -> Calcul
+= 16 -> Résultat final 
+
